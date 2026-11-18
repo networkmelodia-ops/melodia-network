@@ -64,9 +64,9 @@
         }
         .nav { display: flex; justify-content: space-between; align-items: center; height: 70px; }
         
-        /* Logo Alanı (Çift Yazı Hatası Giderildi) */
-        .logo { display: flex; align-items: center; }
-        .logo img { height: 32px; width: auto; object-fit: contain; display: block; }
+        /* Logo ve Yanındaki Metin Düzeni */
+        .logo { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; color: var(--text-primary); }
+        .logo img { height: 28px; width: auto; object-fit: contain; display: block; }
         
         .nav-links { display: flex; gap: 24px; font-size: 13px; font-weight: 500; color: var(--text-secondary); }
         .nav-links a:hover { color: var(--text-primary); }
@@ -117,7 +117,8 @@
 <header>
     <div class="container nav">
         <a href="#" class="logo">
-            <img src="logo.png" alt="Melodia Network">
+            <img src="logo.png" alt="Melodia Network Logo">
+            <span>Melodia Network</span>
         </a>
         <div class="nav-links">
             <a href="#hizmetler">Hizmetler</a>
@@ -127,6 +128,7 @@
         <a href="#iletisim" class="btn">İletişime Geç</a>
     </div>
 </header>
+
 <main>
     <section class="hero">
         <div class="container hero-grid">
